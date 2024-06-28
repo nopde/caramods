@@ -127,7 +127,7 @@ class ModStructure:
                         self.structure_root_files = list(filter(lambda x: x.lower() not in mod_files, (self.get_files(os.path.join(temp_folder, folder)))))
                         self.structure_subfolders = subfolders
                         self.set_structure_data("other/bepinex", os.path.join(temp_folder, folder), shared_vars.GAME_FOLDER)
-                    elif list(filter(lambda x: x.lower().endswith(".dll"), subfiles)):
+                    elif list(filter(lambda x: x.lower().endswith(".dll"), subfiles)) or list(filter(lambda x: x.lower().endswith(".cosmetics"), subfiles)):
                         self.set_structure_data("other/dll", os.path.join(temp_folder, folder), mod_folder)
     
 class Mod:
