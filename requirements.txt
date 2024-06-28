@@ -1,0 +1,5 @@
+colorama
+easygui
+requests
+pyyaml
+aiohttp
